@@ -155,7 +155,7 @@ to get the desired effect
            <a href="<?php echo base_url().'Admin/database_backup/cetak' ?>" class="nav-link" id="navHome">
            <i class="nav-icon fas fa-database"></i>
               <p>
-                Database
+                Backup Database
               </p>
             </a>
           </li>

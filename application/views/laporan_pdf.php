@@ -13,8 +13,8 @@
     <div>
 
         <p>
-            <span style="margin-left:1rem">Terima kasih atas</span> donasi yang telah anda lakukan mohon untuk segera
-            konfirmasi untuk donasi anda, semoga bermanfaat.
+            <span style="margin-left:1rem"></span> Donasi yang telah Anda lakukan Semoga menjadi berkah bagi kita semua.
+            Kontribusi Anda sangat berpengaruh bagi keselamatan bumin kita.
         </p>
         <br>
         <p>Berikut data donasi yang anda lakukan : </p>
@@ -39,7 +39,6 @@
                 <th>Jenis Donasi</th>
                 <th>Berat</th>
                 <th>Alamat</th>
-                <th>No Telp</th>
                 <th>Tgl Donasi</th>
                 <th>Tgl Pengambilan</th>
                 <th>Pegawai yg mengambil</th>
@@ -51,9 +50,8 @@
 
                     <td><?= $no++ ?></td>
                     <td><?= $pmj->jenis_donasi ?></td>
-                    <td><?= $pmj->berat ?></td>
+                    <td><?= $pmj->berat ?> Kg</td>
                     <td><?= $pmj->alamat ?></td>
-                    <td><?= $pmj->no_hp ?></td>
                     <td><?= date('d F Y', strtotime($pmj->tgl_donasi)); ?></td>
                     <td><?= $pmj->tgl_pengambilan == '0000-00-00' ? 'belum di ambil' : date('d F Y', strtotime($pmj->tgl_pengambilan)) ?></td>
                     <td><?= $pmj->tgl_pengambilan == '0000-00-00' ? 'belum ada' : $pmj->nama_pegawai ?></td>
@@ -69,7 +67,7 @@
         </p>
         <br><br><br><br><br><br><br><br>
  
-        <p style="text-align:right">Malang.....</p>
+        <p style="text-align:right">Malang,...,.........,.....</p>
         
         <br><br><br><br>
         <p style="text-align:right"> Bank Sampah Malang </p>

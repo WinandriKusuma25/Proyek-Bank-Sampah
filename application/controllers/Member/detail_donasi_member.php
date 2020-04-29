@@ -69,7 +69,7 @@
         $this->dompdf->set_paper($paper_size, $orientation);
         $this->dompdf->load_html($html);
         $this->dompdf->render();
-        $this->dompdf->stream("laporan_DetailDonasiMember.pdf", array('Attachment' => 0));
+        $this->dompdf->stream("Penukaran Poin Bank Sampah Malang.pdf", array('Attachment' => 0));
     }
 
    

@@ -47,7 +47,7 @@ class donasi_model extends CI_Model {
     }
     public function ubahDataDonasi($id_donasi){
       $data=[
-          'id_user'=> $this->session->userdata('id_user'),
+          //'id_user'=> $this->session->userdata('id_user'),
           'id_pegawai'=>$this->input->post('id_pegawai', true),
           'tgl_donasi'=>$this->input->post('tgl_donasi', true),
           'tgl_pengambilan'=>$this->input->post('tgl_pengambilan', true),
@@ -56,12 +56,12 @@ class donasi_model extends CI_Model {
       $this->db->where('id_donasi', $id_donasi);
       $this->db->update('donasi', $data);  
     }
-    public function getDetailDonasi($id_detail_donasi){
-        $this->db->select('detail_donasi.*, user.nama');
-        $this->db->join('user', 'detail_donasi.id_user = user.id_user');
-        $this->db->join('donasi', 'detail_donasi.id_donasi = donasi.id_donasi');
-        $this->db->where('id_detail_donasi', $id_detail_donasi);
-        return $this->db->get('detail_donasi')->result();   
+    public function getDetailDonasi($id_donasi){
+        $this->db->select('donasi.*, user.nama, pegawai.nama_pegawai');
+        $this->db->join('user', 'donasi.id_user = user.id_user');
+        $this->db->join('pegawai', 'donasi.id_pegawai = pegawai.id_pegawai');
+        $this->db->where('id_donasi', $id_donasi);
+        return $this->db->get('donasi')->result();   
     }
 }
 

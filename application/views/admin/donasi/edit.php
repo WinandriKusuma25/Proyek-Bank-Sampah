@@ -31,6 +31,7 @@
                     <?php foreach($donasi as $jns):?>
                     <form action="" method="post">
                     <input type="hidden" name="id_donasi" value="<?= $jns->id_donasi;?>">
+                    <input type="hidden" name="id_user" value="<?= $jns->id_user;?>">
 
 
                     <div class="form-group">

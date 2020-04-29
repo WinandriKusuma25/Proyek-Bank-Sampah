@@ -86,7 +86,7 @@
                     <tr>
                         <td><?= $no++ ?></td>
                         <td><?= $pmj->jenis_donasi ?></td>
-                        <td><?= $pmj->berat ?></td>
+                        <td><?= $pmj->berat ?> Kg</td>
                         <td><?= $pmj->alamat ?></td>
                         <td><?= $pmj->no_hp ?></td>
                         <td><img src="<?= base_url('assets/Upload/donasi_image/') . $pmj->foto ?>" style= "width:100px; height:100px;" ></td>

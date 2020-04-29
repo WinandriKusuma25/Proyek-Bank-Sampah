@@ -14,6 +14,10 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+      <div class="alert alert-secondary" role="alert">
+      <i class="nav-icon fas fa-chart-line"></i> Dashboard &nbsp; &nbsp; > &nbsp;  &nbsp;    <i class="nav-icon fas fa-table"></i> Rekap Donasi 
+      &nbsp; &nbsp; > &nbsp;  &nbsp; <i class="fas fa-shopping-basket nav-icon"></i> Transaksi Donasi
+        </div>
         <div class="row">
           <div class="col"> 
               <!-- Tabel -->
@@ -94,7 +98,7 @@
                         <td><?= $no++ ?></td>
                         <td><?= $pmj->nama ?></td>
                         <td><?= $pmj->jenis_donasi ?></td>
-                        <td><?= $pmj->berat ?></td>
+                        <td><?= $pmj->berat ?> kg </td>
                         <td><?= $pmj->alamat ?></td>
                         <td><?= $pmj->no_hp ?></td>
                         <td><img src="<?= base_url('assets/Upload/donasi_image/') . $pmj->foto ?>" style= "width:50px; height:50px;" ></td>

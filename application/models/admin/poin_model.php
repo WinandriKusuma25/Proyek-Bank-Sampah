@@ -49,7 +49,6 @@ class poin_model extends CI_Model {
     }
     public function ubahDataPoin($id_poin){
         $data=[
-          'id_user'=>$this->input->post('id_user', true),
           'total_poin'=>$this->input->post('total_poin', true),
 
         ];

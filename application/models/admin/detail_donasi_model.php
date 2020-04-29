@@ -158,7 +158,7 @@ class detail_donasi_model extends CI_Model {
 
 
       public function getDetailDonasi($id_detail_donasi){
-        $this->db->select('detail_donasi.*, user.nama');
+        $this->db->select('detail_donasi.*, user.nama, donasi.*');
         $this->db->join('user', 'detail_donasi.id_user = user.id_user');
         $this->db->join('donasi', 'detail_donasi.id_donasi = donasi.id_donasi');
         $this->db->where('id_detail_donasi', $id_detail_donasi);

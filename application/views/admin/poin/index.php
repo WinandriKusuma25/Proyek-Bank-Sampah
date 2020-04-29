@@ -14,6 +14,10 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+      <div class="alert alert-secondary" role="alert">
+      <i class="nav-icon fas fa-chart-line"></i> Dashboard &nbsp; &nbsp; > &nbsp;  &nbsp;    <i class="nav-icon fas fa-table"></i> Rekap Donasi 
+      &nbsp; &nbsp; > &nbsp;  &nbsp;  <i class="fas fa-money-bill-wave-alt nav-icon"></i> Poin
+        </div>
         <div class="row">
           <div class="col"> 
               <!-- Tabel -->

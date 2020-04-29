@@ -31,17 +31,9 @@
                     <?php foreach($poin as $jns):?>
                     <form action="" method="post">
                     <input type="hidden" name="id_poin" value="<?= $jns->id_poin;?>">
+                    <input type="hidden" name="id_user" value="<?= $jns->id_user;?>">
 
-                    <div class="form-group">
-                            <label for="id_user">Nama Member</label>
-                            <select class="form-control" name="id_user" id="id_user">
-                            <?php foreach($user as $j):?>
-                           <option value="<?=$j->id_user?>"><?=$j->nama?></option>
-                           <?php endforeach ?>
-                           </select>
-                        </div>
-
-                    
+                
                     <div class="form-group">
                             <label for="merk">Total Poin</label>
                             <input type="text" class="form-control" id="total_poin" name="total_poin"

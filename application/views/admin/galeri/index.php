@@ -7,6 +7,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h3 class="m-0 text-success">     <i class="nav-icon fas fa-camera"></i> Data Galeri </h3>
+       
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -14,14 +15,21 @@
     <!-- /.content-header -->
     <!-- Main content -->
     <div class="content">
+ 
       <div class="container-fluid">
+      <div class="alert alert-secondary" role="alert">
+      <i class="nav-icon fas fa-chart-line"></i> Dashboard &nbsp; &nbsp; > &nbsp;  &nbsp;<i class="nav-icon fas fa-camera">  </i> Galeri
+</div>
         <div class="row">
           <div class="col"> 
               <!-- Tabel -->
               <div class="card">
             <!-- /.card-header -->
+            
             <div class="card-body">
+        
                 <div class='card-header'>
+      
                     <a class='btn btn-success'href="galeri/tambah">
                     <i class="fa fa-plus" aria-hidden="true"></i>
                     <span>

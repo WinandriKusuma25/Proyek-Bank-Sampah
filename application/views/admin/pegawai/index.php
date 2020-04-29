@@ -15,6 +15,9 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+      <div class="alert alert-secondary" role="alert">
+      <i class="nav-icon fas fa-chart-line"></i> Dashboard &nbsp; &nbsp; > &nbsp;  &nbsp; <i class="nav-icon fas fa-user-tie"></i> Pegawai
+        </div>
         <div class="row">
           <div class="col"> 
               <!-- Tabel -->

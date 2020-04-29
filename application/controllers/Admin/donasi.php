@@ -91,5 +91,15 @@
     
         }
 
+        public function detail($id_donasi){
+            $data['title']='Detail Pengembalian Donasi';
+            $data['donasi']=$this->donasi_model->getDetailDonasi($id_donasi);
+            $this->load->view('template/header_admin',$data);
+            $this->load->view('template/sidebar_admin');
+            $this->load->view('admin/donasi/detail', $data);
+            $this->load->view('template/footer_admin');
+      
+        } 
+
     }
 ?>        
