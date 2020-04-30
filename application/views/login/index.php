@@ -7,29 +7,56 @@
 <!-- Favicon -->
 <link rel="icon" href="<?php echo base_url().'assets/image/logo_malang.png';?>">
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <!--<link rel="stylesheet" type="text/css" href="<? echo base_url();?>/assets/login/login.css"> -->
+     
 <body background = "<?=base_url();?>./assets/images/background4.jpeg">
         
 <div class="container">
     <div class="row">
-   
         <div class="col-sm-6 col-md-4 col-md-offset-4">
             <div class="account-wall">
                 <img class="profile-img" src="<?=base_url();?>assets/images/logo4.png"alt="">
                 <form class="form-signin" method="POST" action="login/proses_login" role="form" autocomplete="off" id="formlogin" >
+                        <?php if($this->session->flashdata('errorRecaptcha') == TRUE):?>
+                    <div class="alert alert-info alert-danger">
+                        <a href="login" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  
+                        <?php echo $this->session->flashdata('errorRecaptcha');?>
+                        </div>
+                        <?php endif; ?> 
+                        <?php if($this->session->flashdata('pesan') == TRUE):?>
+                    <div class="alert alert-info alert-danger">
+                        <a href="login" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <?php echo $this->session->flashdata('pesan');?>
+                        </div>
+                        <?php endif; ?>            
+
                     <input type="text" class="form-control" name="username" id="username"  placeholder="Username" required autofocus>
                     <input type="password" id="password-field"class="form-control" name="password"  placeholder="Password" required>
                     <span toggle="#myInput" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                     <br>
+                    
+                    <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6Lf9Z_AUAAAAAAZ2KbwDlb1a8Adu9sqC3ilBgmT8"></div>
+                            </div>
+                            <br>
+
                 <button  class="btn btn-success btn-lg btn-block" type="submit">Sign in</button>
+                
+              
+              
                 <a href="#" class="pull-right need-help"> </a><span class="clearfix"></span>
                 <a href="<?=base_url("Admin/register");?>" class="text-center new-account">Create an account </a>
                 <a href="<?=base_url("User/dashboard");?>" class="text-center new-account">Back to Home</a> 
-                <?php if($this->session->flashdata('pesan') == TRUE):?>
-                    <div class="alert alert-info alert-dismissible">
-                        <a href="login" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <?php echo $this->session->flashdata('pesan');?>
-                        <?php endif; ?>
+                
+            
+                    
+                
+                    </div>
+
+                   
+               
                     </div>
                 </form>
             </div>
@@ -100,7 +127,7 @@
 }
 .account-wall
 {
-    margin-top: 130px;
+    margin-top: 70px;
     padding: 40px 0px 20px 0px;
     background-color: #f7f7f7;
     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);

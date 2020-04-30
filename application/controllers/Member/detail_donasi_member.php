@@ -62,7 +62,6 @@
         $data['poin'] = $this->detail_donasi_model->getUser($this->session->userdata('id_user'));
         $data['user'] = $this->detail_donasi_model->getUser($this->session->userdata('id_user'));
         $this->load->view('laporan_pdf', $data);
-
         $paper_size = 'A4';
         $orientation = 'potrait';
         $html = $this->output->get_output();

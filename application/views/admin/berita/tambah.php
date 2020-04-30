@@ -50,7 +50,7 @@
                         </div>
 
                         <button type="submit" name="submit" class="btn btn-success ">Submit</button>
-                        <a href="http://localhost/bankSampah/berita" class="btn btn-info">Cancel</a>
+                        <a href="<?php echo base_url("Admin/berita");?>" class="btn btn-info">Cancel</a>
                         </form>
                         </div>
                     </div>

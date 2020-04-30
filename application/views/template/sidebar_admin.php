@@ -159,7 +159,6 @@ to get the desired effect
               </p>
             </a>
           </li>
-
           
           <li class="nav-item">
            <a href="<?php echo base_url().'Admin/login/logout';?>" class="nav-link" id="navHome">
